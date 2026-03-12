@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input type="text" id="ipt_kwh">
+
+
+<button onclick="calcular()">Calcular</button>
+<div id="mensagem"></div>
+
+
+
+
+
+
+</body>
+</html>
+<script>
+function calcular(){
+let kwh = Number(ipt_kwh.value)
+let conta = kwh * 0.85
+
+
+if (kwh < 100){
+conta = conta * 0.9}
+x
+alert(`Valor da conta a ser paga: ${conta}`)
+
+
+}
+
+
+
+</script>

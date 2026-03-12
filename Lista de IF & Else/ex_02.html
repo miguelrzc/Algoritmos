@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input_latinhas">
+    <button onclick="qtdRefri()">Quantos Refris?</button>
+    <div id="mensagem"></div>
+</body>
+</html>
+
+<script>
+function qtdRefri() {
+let latinhas = Number(input_latinhas.value)
+let refriAno = latinhas * 365
+
+mensagem.innerHTML = `Você consome em 1 ano ${refriAno} latinhas` + `<br>`
+
+if (refriAno >= 500)
+mensagem.innerHTML += "Cuidado com a diabetes";
+
+
+
+
+}
+
+
+
+
+
+</script>
