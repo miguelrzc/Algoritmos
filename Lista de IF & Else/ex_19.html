@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input_qtd"placeholder="Quantidade de chocolates:">
+
+    <button onclick="compra()">Compra</button>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+function compra() {
+let qtd = Number(input_qtd.value)
+
+if (qtd > 6){
+mensagem.innerHTML = `o valor da sua compra foi de ${qtd * 2.5}`
+
+}else {
+    mensagem.innerHTML = `o valor da sua compra foi de ${qtd * 3}`
+}
+
+
+
+
+
+}
+
+
+
+
+</script>

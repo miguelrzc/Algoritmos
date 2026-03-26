@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input_n1"placeholder="Sua primeira nota:">
+    <input type="text" id="input_n2"placeholder="Sua segunda nota:">
+    <button onclick="verificar()">Verificar Situaçõ</button>
+
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+function verificar() {
+let n1 = Number(input_n1.value)
+let n2 = Number(input_n2.value)
+let media = (n1 + n2) / 2 
+
+if (media >= 6 ){
+alert ("Parabéns, aprovado")
+
+}else {alert ("Tente outra vez...")}
+
+
+
+
+}
+
+
+
+
+</script>

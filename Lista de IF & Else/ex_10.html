@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input_sitcom"placeholder="Último sitcom assistido:">
+    <input type="text" id="input_episodios"placeholder="Quantos episódios:">
+
+    <button onclick="verificar()">Verificar Nível</button>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+function verificar() {
+let série = input_sitcom.value
+let episodios = Number(input_episodios.value)
+
+
+let minutos = episodios * 22
+let horas = minutos / 60
+
+mensagem.innerHTML = `Vejo que você gosta da série ${série}.`
+
+if (horas >= 30) {
+mensagem.innerHTML += ` Uau, você realmente gosta dessa série!`
+
+
+}
+
+}
+
+
+
+
+</script>

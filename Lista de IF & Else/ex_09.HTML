@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input_homens" placeholder="Quantidade de Homens:">
+    <input type="text" id="input_mulheres"placeholder="Quantidade de mulheres:">
+
+
+    <button onclick="analisar()">Analisar Conta</button>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+function analisar() {
+let homens = Number(input_homens.value)
+let mulheres = Number(input_mulheres.value)
+let pesoH = homens * 80
+let pesoM = mulheres * 60
+let Valor = pesoH + pesoM
+ 
+if (Valor >= 800) {
+mensagem.innerHTML = `Será necessário que alguém desça para que o elevador se movimente`
+mensagem.style.color = "blue";
+}else {
+mensagem.innerHTML = `Este elevador suporta 800 Kg e o peso estimado desta lotação é de ${Valor}kg`}
+
+
+}
+
+
+
+
+</script>

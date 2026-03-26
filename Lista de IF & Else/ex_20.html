@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input_meta" placeholder="Meta de Economia:">
+    <input type="text" id="input_tem"placeholder="Quantidade guardada:">
+
+    <button onclick="analisar()">Analisar Economia</button>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+function analisar(){
+let meta = Number(input_meta.value)
+let tem = Number(input_tem.value)
+
+if (tem >= meta) {
+mensagem.innerHTML = `Parabéns meta alcançada.`
+mensagem.innerHTML += ` Meta ultrapassada em R$${tem - meta}`
+
+}else {
+    mensagem.innerHTML = `Força! Ainda em busca da meta! Falta:R$${meta - tem}`
+}
+
+}
+</script>

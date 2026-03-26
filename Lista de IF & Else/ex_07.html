@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    
+    <input type="number" id="input_renda" placeholder="Renda Familiar"> 
+
+    
+    <input type="number" id="input_prestacao" placeholder="Valor Prestação"> 
+    <button onclick="verificar()">Verificar financiamento</button>
+    <div id="div_mensagem"></div>
+    <body>
+    <html>
+
+
+    <script>
+        function verificar() {
+            let renda = Number(input_renda.value)
+            let prestacao = Number(input_prestacao.value)
+
+            let calculo = (prestacao / renda) * 100
+
+            div_mensagem.innerHTML = `A prestação corresponde a ${calculo}% da renda familiar`
+
+            if (calculo > 30) {
+                div_mensagem.innerHTML += `style="color: red;">Será necessário complementar a renda familiar`
+            }
+        }
+    </script>
+

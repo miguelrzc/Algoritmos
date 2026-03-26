@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        Verificador de Impar ou Par
+    <input type="number" id="input_numero" placeholder="Digite um número">
+    <button onclick="verificar()">Verificar</button>
+    <div id="div_mensagem"></div>
+
+    <script>
+        function verificar() {
+            let numero = Number(input_numero.value);
+            
+        
+            if (numero % 2 == 0) {
+                
+                div_mensagem.innerHTML = `O número ${numero} é Par`;
+                div_mensagem.style.color = "red";
+            } else {
+             
+                div_mensagem.innerHTML = `O número ${numero} é Ímpar`;
+                div_mensagem.style.color = "blue";
+            }
+        }
+    </script>
+</body>
+</html>

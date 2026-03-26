@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input_temperatura" placeholder="Temperatura" >
+    <button onclick="verificar()">Verificar clima</button>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+function verificar() {
+let temp = Number(input_temperatura.value)
+ 
+if (temp >= 10) {mensagem.innerHTML = `<img src="https://thumbs.dreamstime.com/z/pão-triste-com-emoji-do-molde-ilustração-hediondo-vetor-alimento-110870914.jpg" width="100">`
+
+} else {
+    mensagem.innerHTML = `<img src="https://img.freepik.com/vetores-gratis/adesivo-de-frango-frito-no-fundo-branco_1308-59066.jpg?semt=ais_hybrid&w=740&q=80" widght="100">`
+}
+
+}
+
+
+
+
+</script>

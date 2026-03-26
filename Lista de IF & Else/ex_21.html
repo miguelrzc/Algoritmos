@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input_frequencia"placeholder="Frequência:">
+    <button onclick="analisar()">Analisar Frequência</button>
+
+    <div id="mensagem"></div>
+    <img src="" alt="">
+</body>
+</html>
+<script>
+function analisar() {
+let frequencia = Number(input_frequencia.value)
+
+if (frequencia > 50){
+mensagem.innerHTML = `<img src="https://t3.ftcdn.net/jpg/01/22/53/88/360_F_122538873_4PtXWBeuaQdj2URrc4JcmyurDCMy1ANw.jpg" width="100">`
+                
+}else { 
+    mensagem.innerHTML = `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiG-wUMsWJjAMy-pfEqit_FT9kM0PhqqGVrA&s" width="100">`
+}
+}
+
+
+
+
+
+</script>

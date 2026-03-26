@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input_saldo"placeholder="Saldo Atual:">
+    <input type="text" id="input_debito"placeholder="Valor da prestação:">
+    
+    <button onclick="Analisar()">Analisar Conta</button>
+
+    <div id="mensagem"></div>
+    
+</body>
+</html>
+<script>
+function Analisar() {
+let saldo = Number(input_saldo.value)
+let debito = Number(input_debito.value)
+let atual = saldo - debito
+
+mensagem.innerHTML = `O saldo atual da conta corrente é ${atual}.`
+}
+
+</script>
+
